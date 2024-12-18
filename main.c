@@ -8,13 +8,12 @@ int main()
 
   printf("\n=== Linked List Operations ===\n\n");
 
-  // Test insert and display
   printf("1. Inserting elements:\n");
-  insert(&list, 10, 0); // Insert at beginning
-  insert(&list, 20, 1); // Insert at position 1
-  insert(&list, 20, 2); // Insert at position 2
-  insert(&list, 30, 3); // Insert at position 3
-  insert(&list, 40, 4); // Insert duplicate value
+  insert(&list, 10, 0);
+  insert(&list, 20, 1);
+  insert(&list, 20, 2);
+  insert(&list, 30, 3);
+  insert(&list, 40, 4);
   printf("List after insertions: ");
   displayList(&list);
   printf("\n\n");
@@ -50,8 +49,8 @@ int main()
 
   // Test duplicate removal
   printf("7. Testing duplicate removal:\n");
-  insert(&list, 20, 0); // Insert another 20
-  insert(&list, 20, 0); // Insert another 20
+  insert(&list, 20, 0);
+  insert(&list, 20, 0);
   printf("List before removing duplicates: ");
   displayList(&list);
   printf("\n");

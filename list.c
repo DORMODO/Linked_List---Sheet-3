@@ -3,11 +3,6 @@
 #include <stdlib.h>
 #include "list.h"
 
-//@ const:
-// The keyword const tells the compiler that the data being pointed to (in this case, a LinkedList structure) should remain constant, meaning it cannot be altered.
-//@ Pointer to Constant Data:
-// const LinkedList *list says that list is a pointer to a constant LinkedList. This means that the function can read the data in the linked list structure but cannot modify it.
-
 void initializeList(LinkedList *list)
 {
   list->head = NULL;
